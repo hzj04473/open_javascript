@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>변수 2/2 : 변수의 효용</title>
+  </head>
+  <body>
+    <script>
+      console.log('변수를 안 사용했을 경우');
+      console.log(100 + 10);
+      console.log((100 + 10) / 10);
+      console.log((100 + 10) / 10 - 10);
+      console.log(((100 + 10) / 10 - 10) * 10);
+
+      console.log('변수는 코드의 재활용을 위해');
+      console.log('변수를 사용했을 경우');
+      a = 100;
+      a = a + 10;
+      console.log(a);
+      a = a / 10;
+      console.log(a);
+      a = a - 10;
+      console.log(a);
+      a = a * 10;
+      console.log(a);
+    </script>
+  </body>
+</html>
