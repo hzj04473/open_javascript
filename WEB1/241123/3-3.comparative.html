@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>비교 3/4 : 연산자 (일치연산자 === 쓰자)</title>
+  </head>
+  <body>
+    <h1>일치연산자 === 쓰자</h1>
+    <script>
+      // == 일치 연산자 (strict equal operrator)
+      console.log(null == undefined); //true
+
+      var a;
+      console.log(a); // undefined - 정의되어 있지 않다.
+
+      var a = null; // null - 값이 없는데, 의도적인...
+      console.log(a);
+
+      console.log(null === undefined); //false
+
+      console.log(true == 1); //true
+      console.log(true === 1); //false
+      console.log(true == '1'); //true
+      console.log(true === '1'); //false
+      console.log(0 === -0); //true
+      console.log(NaN === NaN); //false
+    </script>
+  </body>
+</html>
