@@ -5,5 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>조건문 3/5 : 조건문의 응용</title>
   </head>
-  <body></body>
+  <body>
+    <script>
+      var a = 1;
+
+      if (a === 1) {
+        console.log('a is 1');
+      }
+
+      var id = prompt('아이디를 입력하여 주세요.');
+      // console.log(id);
+
+      if (id === 'egoing') {
+        var password = prompt('비밀번호를 입력하여 주세요.');
+        if (password === '111111') {
+          console.log('로그인 하셨습니다. ' + id + ' 님 반갑습니다.');
+        } else {
+          console.log('비밀번호가 다릅니다.');
+        }
+      } else {
+        console.log('아이디가 일치하지 않습니다.');
+      }
+    </script>
+  </body>
 </html>
+20
