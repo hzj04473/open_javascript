@@ -5,5 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>조건문 4/5 : 논리 연산자</title>
   </head>
-  <body></body>
+  <body>
+    <script>
+      // && : 좌항 우항 모두 참을 경우
+      console.log('&& : 좌항 우항 모두 참을 경우');
+      if (true && true) {
+        console.log(1);
+      }
+      if (true && false) {
+        console.log(2);
+      }
+      if (false && true) {
+        console.log(3);
+      }
+      if (false && false) {
+        console.log(4);
+      }
+
+      // var id = prompt('아이디를 입력하여 주세요.');
+      // var password = prompt('비밀번호를 입력하여 주세요.');
+
+      // if (id === 'egoing' && password === '111111' && true) {
+      //   console.log('로그인 하셨습니다. ' + id + ' 님 반갑습니다.');
+      // } else {
+      //   console.log('아이디가 일치하지 않습니다.');
+      // }
+
+      // || : or연산자 - 둘중에 하나만 참이면 참
+      console.log('|| or연산자 - 둘중에 하나만 참이면 참');
+      if (true || true) {
+        console.log(1);
+      }
+      if (true || false) {
+        console.log(2);
+      }
+      if (false || true) {
+        console.log(3);
+      }
+      if (false || false) {
+        console.log(4);
+      }
+
+      // id = prompt('아이디를 입력해주세요.');
+      // if (id === 'egoing' || id === 'k8805' || id === 'sorialgi') {
+      //   alert('인증 했습니다.');
+      // } else {
+      //   alert('인증에 실패 했습니다.');
+      // }
+
+      // id = prompt('아이디를 입력해주세요.');
+      // password = prompt('비밀번호를 입력해주세요.');
+      // if (
+      //   (id === 'egoing' || id === 'k8805' || id === 'sorialgi') &&
+      //   password === '111111'
+      // ) {
+      //   alert('인증 했습니다.');
+      // } else {
+      //   alert('인증에 실패 했습니다.');
+      // }
+
+      // ! : '!'는 부정의 의미로, Boolean의 값을 역전
+      console.log('! not 연산자');
+      if (!true && !true) {
+        console.log(1);
+      }
+      if (!false && !true) {
+        console.log(2);
+      }
+      if (!true && !false) {
+        console.log(3);
+      }
+      if (!false && !false) {
+        console.log(4);
+      }
+    </script>
+  </body>
 </html>
