@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>배열 3/5 : 배열과 반복문의 조우</title>
+  </head>
+  <body>
+    <script>
+      function get_members() {
+        return ['egoing', 'k8805', 'sorialgi', 'leezche'];
+      }
+
+      members = get_members();
+      document.write('-수동- <br />');
+      document.write(members[0].toUpperCase() + '<br />');
+      document.write(members[1].toUpperCase() + '<br />');
+      document.write(members[2].toUpperCase() + '<br />');
+      document.write('-수동으로 진행시 오류가 발생할수 있다.- <br />');
+      document.write('-반복문- <br />');
+      // members.length는 배열에 담긴 값의 숫자를 알려준다.
+      console.log(members.length);
+      for (let i = 0; i < members.length; i++) {
+        document.write(members[i].toUpperCase() + '<br />');
+      }
+    </script>
+  </body>
+</html>
