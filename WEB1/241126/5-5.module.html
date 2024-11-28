@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>모듈 5/5 : 라이브러리의 사용</title>
+    <script src="./js/jquery.js"></script>
+  </head>
+  <body>
+    <ul id="list">
+      <li>empty</li>
+      <li>empty</li>
+      <li>empty</li>
+      <li>empty</li>
+    </ul>
+    <input type="button" value="execute" id="execute_btn" />
+    <script>
+      // jQuery를 사용하는 방법
+      // $('#list li').text('cording everybody');
+      $('#execute_btn').click(function () {
+        $('#list li').text('cording everybody');
+      });
+
+      // 만약에 javascript 로 코드를 짠다면
+      // function addEvent(target, eventType, eventHandler, useCapture) {
+      //   if (target.addEventListener) {
+      //     // W3C DOM
+      //     target.addEventListener(
+      //       eventType,
+      //       eventHandler,
+      //       useCapture ? useCapture : false
+      //     );
+      //   } else if (target.attachEvent) {
+      //     // IE DOM
+      //     var r = target.attachEvent('on' + eventType, eventHandler);
+      //   }
+      // }
+      // function clickHandler(event) {
+      //   var nav = document.getElementById('list');
+      //   for (var i = 0; i < nav.childNodes.length; i++) {
+      //     var child = nav.childNodes[i];
+      //     if (child.nodeType == 3) continue;
+      //     child.innerText = 'Coding everybody';
+      //   }
+      // }
+      // addEvent(document.getElementById('execute_btn'), 'click', clickHandler);
+    </script>
+  </body>
+</html>
