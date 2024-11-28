@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>객체 1/3 - 객체의 문법</title>
+  </head>
+  <body>
+    <script>
+      // 연관배열, 맵, 딕셔너리 - 데이터 타입이 객체에 해당
+      // 첫번째 방법
+      let grades = {
+        egoing: 10,
+        k8805: 6,
+        sorialgi: 80,
+      };
+
+      console.log(grades);
+
+      // 두번째 방법
+      let grades2 = {};
+
+      grades2['egoing'] = 10;
+      grades2['k8805'] = 6;
+      grades2['sorialgi'] = 80;
+
+      console.log(grades2);
+
+      // 세번째 방법
+      // let grades2 = new Object();
+
+      // console.log(grades['egoing']);
+      // console.log(grades['ego' + 'ing']);
+
+      console.log(grades.egoing);
+
+      // console.log(grades['k8805']);
+      console.log(grades.k8805);
+    </script>
+  </body>
+</html>
